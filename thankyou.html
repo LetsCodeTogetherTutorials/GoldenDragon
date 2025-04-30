@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You - Golden Dragon</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="header">
+    <h1>Golden Dragon Restaurant</h1>
+    <ul class="main_navigation">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="drinks.html">Drinks</a></li>
+      <li><a href="order.html">Order Online</a></li>
+    </ul>  
+  </div>
+
+  <div class="main" style="padding:100px">
+    <h2 id="thank-you-message"></h2>
+    <p>Your delicious meal is being prepared. 🍜</p>
+    <p>We appreciate your support. See you soon!</p>
+    <a href="index.html" class="button">Back to Home</a>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 Golden Dragon Restaurant</p>
+  </div>
+  <script>
+    const name = sessionStorage.getItem('customerName');
+    document.getElementById('thank-you-message').textContent = `Thank You ${name} for Your Order!`;
+  </script>
+</body>
+</html>

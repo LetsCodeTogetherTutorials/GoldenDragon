@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Golden Dragon - Order Online</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="header">
+    <h1>Order Online</h1>
+    <ul class="main_navigation">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="drinks.html">Drinks</a></li>
+      <li><a href="order.html">Order Online</a></li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <h2>Choose Your Dishes</h2>
+    <div id="menu-items">
+      <div>
+        <span>Spring Rolls - $5.00</span>
+        <input type="number" min="0" value="0" data-price="5.00" data-name="Spring Rolls" />
+      </div>
+      <div>
+        <span>Hot and Sour Soup - $8.00</span>
+        <input type="number" min="0" value="0" data-price="8.00" data-name="Hot and Sour Soup" />
+      </div>
+      <div>
+        <span>Crispy Softshelled Crab - $10.00</span>
+        <input type="number" min="0" value="0" data-price="10.00" data-name="Crispy Softshelled Crab" />
+      </div>
+      <div>
+        <span>Crispy Prawn Cake - $8.00</span>
+        <input type="number" min="0" value="0" data-price="8.00" data-name="Crispy Prawn Cake" />
+      </div>
+      <div>
+        <span>Kung Pao Chicken - $19.90</span>
+        <input type="number" min="0" value="0" data-price="19.90" data-name="Kung Pao Chicken" />
+      </div>
+      <div>
+        <span>Sweet and Sour Pork - $19.90</span>
+        <input type="number" min="0" value="0" data-price="19.90" data-name="Sweet and Sour Pork" />
+      </div>
+      <div>
+        <span>Mongoliean Beef - $19.90</span>
+        <input type="number" min="0" value="0" data-price="19.90" data-name="Mongoliean Beef" />
+      </div>
+      <div>
+        <span>Seafood Vegetable Stirfry - $19.90</span>
+        <input type="number" min="0" value="0" data-price="19.90" data-name="Seafood Vegetable Stirfry" />
+      </div>
+      <div>
+        <span>Peking Duck - $30.00</span>
+        <input type="number" min="0" value="0" data-price="30.00" data-name="Peking Duck" />
+      </div>
+      <div>
+        <span>Spicy Szechuan Beef - $25.00</span>
+        <input type="number" min="0" value="0" data-price="25.00" data-name="Spicy Szechuan Beef" />
+      </div>
+      <div>
+        <span>Mango Puddin - $5.50</span>
+        <input type="number" min="0" value="0" data-price="5.50" data-name="Mango Puddin" />
+      </div>
+      <div>
+        <span>Sesame Balls - $5.50</span>
+        <input type="number" min="0" value="0" data-price="5.50" data-name="Sesame Balls" />
+      </div>      
+    </div>
+
+    
+
+    <div id="cart-summary">
+      <h3>Your Order:</h3>
+      <ul id="cart-items"></ul>
+      <p id="total">Total: $0.00</p>
+      <button id="clear-cart">Clear Cart</button>
+    </div>
+
+    <h2>Checkout</h2>
+    <form id="checkout-form">
+      <label>Name: <input type="text" id="name" required placeholder="John Smith" /></label><br />
+      <label>Phone: <input type="text" required  pattern="\d+" placeholder="12345"/></label><br />
+      <label>Payment Method:
+        <select id="payment" required>
+          <option value="counter">Pay at Counter</option>
+          <option value="card">Pay by Card</option>
+        </select>
+      </label><br />
+
+
+      <!-- style="display: none;" initially not to show this div -->
+      <div id="card-info"  style="display: none;">
+        <!-- <label>Credit Card Number: <input type="text" id="card_no" pattern="\d+" placeholder="1234 1234 1234 1234" /></label><br /> -->
+        <label>Credit Card Number: </label>
+        <input type="text" id="card_no" pattern="\d+" placeholder="1234 1234 1234 1234" />
+      </div>
+
+      <button type="submit">Place Order</button>
+    </form>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 Golden Dragon Restaurant</p>
+  </div>
+
+  <script src="order.js"></script>
+</body>
+</html>

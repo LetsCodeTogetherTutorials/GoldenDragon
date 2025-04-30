@@ -1,0 +1,210 @@
+body {
+    font-family: Arial, sans-serif;    
+    margin: 0;
+    padding: 0;    
+  }
+
+  
+
+  
+  .header, .footer {
+    background-color: #b22222;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+  }
+  .main_navigation {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+  }
+
+  /* Remove the period . infront of list items */
+  li{
+    list-style: none;
+  }
+
+    
+  a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  ul li a:hover {
+    background-color: #f50612; /* Tomato red on hover */
+    padding:10px;
+    border-radius: 20px;
+  }
+  
+  main {
+    padding: 1em;
+  }
+
+  table{
+    margin:0px auto;
+  }
+
+  th{
+    font-size:large;
+  }
+
+  td{
+    text-align: left;
+  }
+  
+  .hero img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  section {
+    margin-bottom: 2em;
+    text-align: center;
+  }
+  
+  h1, h2 {
+    color: balck;
+  }
+  
+  footer {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-top: 1px solid #ccc;
+  }
+
+  #special {
+    background-color: #fff8dc; /* Light warm color */
+    border: 2px dashed #b22222; /* Red dashed border */
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  #special h2 {
+    margin-top: 0;
+    color: #b22222;
+  }
+  
+  #special p {
+    color:rgb(0,0,0);
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  /* --- Menu Items --- */
+#menu-items div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 400px;
+  margin: 10px auto;
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+#menu-items input[type="number"] {
+  width: 50px;
+  padding: 5px;
+  text-align: center;
+}
+
+/* --- Cart --- */
+#cart {
+  max-width: 400px;
+  margin: 20px auto;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* --- Checkout Form --- */
+#checkout-form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 15px;
+  background: #f1f1f1;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+#checkout-form label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#checkout-form input, #checkout-form select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+#checkout-form select{
+  width:105%
+}
+
+#checkout-form button {
+  width: 105%;
+  background-color: #c8102e;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+/* Button hover effect */
+#checkout-form button:hover {
+  background-color: #a30c24;
+}
+
+.main h2,p{
+  text-align: center;
+}
+
+#total {
+  text-align: center;
+}
+
+#cart-summary{
+  margin:0px auto;
+  text-align: center;
+  width:40%;
+}
+
+
+  
+#cart-summary h3,ul {
+  text-align: center;
+}
+
+#cart-items li {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+#cart-items .dish-name {
+  text-align: left;
+}
+
+
+#cart-items .dish-price {
+  text-align: right;
+}
+
